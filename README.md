@@ -167,17 +167,17 @@ _git --version_
 
 Configure Git with your details:
 
-_git config --global user.name "Your Name"
+__git config --global user.name "Your Name"_
 
-git config --global user.email "your.email@example.com"_
+_git config --global user.email "your.email@example.com"__
 
 Initialize a Local Repository
 
 Navigate to your project folder and initialize Git:
 
-_cd /path/to/your/project
+__cd /path/to/your/project_
 
-git init_
+_git init__
 
 Connect to GitHub Repository
 
@@ -195,9 +195,9 @@ _git add ._
 
 Or add specific files:
 
-_git add filename
+__git add filename_
 
-Make the First Commit_
+_Make the First Commit__
 
 Commit with a message describing the changes:
 
@@ -207,9 +207,9 @@ Push to GitHub
 
 Upload your changes to GitHub:
 
-_git branch -M main
+__git branch -M main_
 
-git push -u origin main_
+_git push -u origin main__
 
 **Why Are Commits Important?**
 
