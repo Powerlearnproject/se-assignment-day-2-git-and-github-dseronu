@@ -222,6 +222,44 @@ _git push -u origin main__
 
 ## How does branching work in Git, and why is it an important feature for collaborative development on GitHub? Discuss the process of creating, using, and merging branches in a typical workflow.
 
+**Git Branching**
+
+*What is Branching in Git?*
+Branching lets developers work on separate features or fixes simultaneously without affecting the main codebase. It’s crucial for collaboration, enabling code isolation, testing, and easy rollbacks.
+
+**Git Branching Workflow:**
+*git checkout -b feature-branch*
+
+**Make Changes & Commit:**
+*git add .
+git commit -m "Add new feature"*
+
+**Push to GitHub & Create Pull Request:**
+*git push origin feature-branch
+On GitHub, open a Pull Request for review.*
+
+**Merge Changes:**
+*git checkout main
+git pull origin main
+git merge feature-branch*
+
+**Delete Branch (Cleanup):**
+*git branch -d feature-branch
+git push origin --delete feature-branch*
+
+**Why Branching Matters on GitHub**
+
+1. Enables parallel development
+
+2. Isolates features/bugs
+
+3. Simplifies code review and testing
+
+4. Supports easy rollbacks
+
+5. Branching keeps projects organized and collaborative!
+
+
 ## Explore the role of pull requests in the GitHub workflow. How do they facilitate code review and collaboration, and what are the typical steps involved in creating and merging a pull request?
 
 ## Discuss the concept of "forking" a repository on GitHub. How does forking differ from cloning, and what are some scenarios where forking would be particularly useful?
