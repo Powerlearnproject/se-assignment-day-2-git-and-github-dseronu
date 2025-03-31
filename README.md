@@ -225,28 +225,38 @@ _git push -u origin main__
 **Git Branching**
 
 *What is Branching in Git?*
+
 Branching lets developers work on separate features or fixes simultaneously without affecting the main codebase. It’s crucial for collaboration, enabling code isolation, testing, and easy rollbacks.
 
 **Git Branching Workflow:**
-*git checkout -b feature-branch*
+
+_git checkout -b feature-branch_
 
 **Make Changes & Commit:**
+
 _git add ._
+
 _git commit -m "Add new feature"_
 
 **Push to GitHub & Create Pull Request:**
+
 _git push origin feature-branch_
 
 On GitHub, open a Pull Request for review.
 
 **Merge Changes:**
-*git checkout main
-git pull origin main
-git merge feature-branch*
+
+_git checkout main_
+
+_git pull origin main_
+
+_git merge feature-branch_
 
 **Delete Branch (Cleanup):**
-*git branch -d feature-branch
-git push origin --delete feature-branch*
+
+_git branch -d feature-branch_
+
+_git push origin --delete feature-branch_
 
 **Why Branching Matters on GitHub**
 
