@@ -231,12 +231,13 @@ Branching lets developers work on separate features or fixes simultaneously with
 *git checkout -b feature-branch*
 
 **Make Changes & Commit:**
-*git add .
-git commit -m "Add new feature"*
+_git add ._
+_git commit -m "Add new feature"_
 
 **Push to GitHub & Create Pull Request:**
-*git push origin feature-branch
-On GitHub, open a Pull Request for review.*
+_git push origin feature-branch_
+
+On GitHub, open a Pull Request for review.
 
 **Merge Changes:**
 *git checkout main
