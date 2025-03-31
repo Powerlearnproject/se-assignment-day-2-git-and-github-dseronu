@@ -273,6 +273,75 @@ _git push origin --delete feature-branch_
 
 ## Explore the role of pull requests in the GitHub workflow. How do they facilitate code review and collaboration, and what are the typical steps involved in creating and merging a pull request?
 
+Role of Pull Requests in the GitHub Workflow
+
+A pull request (PR) in GitHub is a tool for code review and collaboration. It lets developers propose changes, get feedback, and ensure code quality before merging into the main branch.
+
+**How Pull Requests Facilitate Collaboration:**
+
+i) **Code Review:** Teammates can review, comment, and suggest changes.
+
+ii) **Quality Assurance:** Automated tests and CI/CD pipelines can run on the PR.
+
+iii) **Version Control:** Tracks discussions and commits tied to the feature or fix.
+
+iv) **Transparency:** Shows a clear history of changes and why they were made.
+
+**Typical Steps in Creating and Merging a Pull Request:**
+
+1. Create a Branch and Push Changes
+
+git checkout -b feature-branch
+
+# Make changes
+
+_git add ._
+
+_git commit -m "Add new feature"_
+
+_git push origin feature-branch_
+
+**2. Open a Pull Request on GitHub**
+
+Go to your repository on GitHub.
+
+Click on "Compare & Pull Request" next to your branch.
+
+Add a title and description explaining your changes.
+
+Assign reviewers, labels, and projects if needed.
+
+Click "Create Pull Request".
+
+**3. Review and Discuss the Pull Request**
+
+Reviewers can comment, request changes, or approve the PR.
+
+You can make additional commits to address feedback.
+
+**4. Merge the Pull Request**
+
+Once approved:
+
+Click "Merge Pull Request" on GitHub.
+
+Choose merge options:
+
+Merge Commit: Creates a commit on the main branch.
+
+Squash and Merge: Combines all commits into one.
+
+Rebase and Merge: Applies commits individually for a cleaner history.
+
+5. Clean Up the Branch
+
+git branch -d feature-branch         # Delete locally
+
+git push origin --delete feature-branch  # Delete remotely
+
+Pull Requests ensure high-quality, collaborative code by enabling reviews, discussions, and structured merging!
+
+
 ## Discuss the concept of "forking" a repository on GitHub. How does forking differ from cloning, and what are some scenarios where forking would be particularly useful?
 
 ## Examine the importance of issues and project boards on GitHub. How can they be used to track bugs, manage tasks, and improve project organization? Provide examples of how these tools can enhance collaborative efforts.
